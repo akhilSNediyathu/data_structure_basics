@@ -106,11 +106,29 @@ while(temp!=null){
 }
 
   }
+  void insertAtIndex(index,val){
+    Node? current = head;
+    int currentindex = 0;
+    while( current!=0){
+      currentindex++;
+      if(currentindex==index){
+        break;
+      }else{
+        current=current!.next;
+      }
+
+    }
+    if(current!=null){
+      current.data = val;
+    }
+  }
 }
 
 
 
 void main(){
   LinkedList a =LinkedList();
-  a..add(5)..add(3)..add(2)..LinkedtoArray()..insertBefore(2, 1)..remove(3)..remove(5)..display()..linear(2);
+  a..add(5)..add(3)..add(2)..LinkedtoArray()..insertBefore(2, 1)..remove(3)..remove(5)..display()..linear(2)..insertAtIndex(1, 9);
+  print('test');
+  a.display();
 }

@@ -4,7 +4,7 @@ void main() {
  print('enter the string');
   String? value = stdin.readLineSync()??' ';
   String nval = value.toLowerCase();
-  print(nval);
+ 
  print('enter the count for each alphabet added');
   int n = int.parse(stdin.readLineSync()!); 
 
