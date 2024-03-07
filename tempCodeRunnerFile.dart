@@ -1,1 +1,2 @@
- // display();
+  // linkedList..displayNode()..reverseNode();
+  // print('======================');
