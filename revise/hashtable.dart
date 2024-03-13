@@ -2,7 +2,7 @@ class Hash{
   int? size;
   List? table;
   Hash(int size) {
-    table = List.filled(size, null);
+    this.table = List.filled(size, null);
     this.size=size;
   }
 hashing(String key){
@@ -29,10 +29,14 @@ print('$i : ${table?[i]}');
     }
   }
 }
+remove(key){
+int index =hashing(key);
+table?[index]=null;
+}
 
 
 }
 void main (){
   Hash newHash =Hash(10);
-  newHash..set('name', 'akhil')..set('age', '24')..display()..get('age');
+  newHash..set('name', 'akhil')..set('age', '24')..display()..get('age')..remove('name')..display();
 }
