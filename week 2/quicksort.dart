@@ -1,7 +1,8 @@
 quickSort(arr){
   int a =arr.length;
 if(a<=1){
-  return arr;
+   return arr;
+  // print(arr);
 }
 int pivot = arr[a~/2];
 List smaller=[];
@@ -25,6 +26,7 @@ return [...quickSort(smaller),...equal,...quickSort(larger)];
 }
 void main(){
   List arr = [9,2,8,6,4,5,7,6];
+ 
  List sorted= quickSort(arr); 
  print(sorted);
 }

@@ -15,4 +15,5 @@ print(arr);
 void main(){
   List arr = [9,2,8,6,4,5,7,6];
   insertionSort(arr); 
+  print('നമസ്കാരം');
 }
