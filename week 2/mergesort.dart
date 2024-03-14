@@ -1,4 +1,4 @@
-List<int> mergeSort(List<int> list) {
+ List<int> mergeSort(List<int> list) {
   if (list.length <= 1) {
     
     return list;

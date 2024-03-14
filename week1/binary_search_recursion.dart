@@ -19,7 +19,7 @@ int binarySearch(List<int> arr, int target, int low, int high) {
 
 void main() {
   List<int> sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  int target = 10;
+  int target = 100;
 
   int result = binarySearch(sortedArray, target, 0, sortedArray.length - 1);
 
