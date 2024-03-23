@@ -1,4 +1,5 @@
 // Define a class for the tree node
+
 class TreeNode {
   late int value;
   TreeNode? leftChild;
@@ -84,6 +85,7 @@ class BinaryTree {
     return minValue;
   }
 }
+
 
 void main() {
   // Create a new binary tree
