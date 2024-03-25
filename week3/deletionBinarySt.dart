@@ -99,6 +99,7 @@ void main() {
   tree.insert(4);
   tree.insert(6);
   tree.insert(8);
+  
 
   // Perform an in-order traversal of the tree and print the values
   print('In-order traversal before deletion:');

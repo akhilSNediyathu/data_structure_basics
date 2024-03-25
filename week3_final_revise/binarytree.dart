@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 class TreeNode{
   int data;
   TreeNode? left,right;
@@ -30,8 +32,24 @@ class BinaryTree{
     }
 
   }
+bfs(TreeNode? node){
+  if(node==null) return;
+  Queue newQ = Queue();
+  newQ.add(node);
+  while (newQ.isNotEmpty) {
+    TreeNode currentNode = newQ.removeFirst();
+    print(currentNode.data);
+    if(currentNode.left!=null){
+      newQ.add(currentNode.left);
+    }if(currentNode.right!=null){
+      newQ.add(currentNode.right);
+    }
+  }
+
+}
+
 }
 void main(){
   BinaryTree a = BinaryTree();
-  a..addData(5)..addData(3)..addData(3)..addData(7)..inOrderTraverse(a.root);
+  a..addData(5)..addData(3)..addData(3)..addData(7)..bfs(a.root);
 }
