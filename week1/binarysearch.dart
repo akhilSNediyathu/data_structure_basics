@@ -20,7 +20,7 @@ while (low<=high) {
 }
 void main(){
   List  arr =[1,2,3,4,5,6] ;
-  int res = binary(arr, 0);
+  int res = binary(arr, 5);
   if(res!=-1){
     print('result found ');
   }

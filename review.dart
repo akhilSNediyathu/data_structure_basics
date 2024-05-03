@@ -38,3 +38,6 @@ void main() {
   // Checking if the map is empty
   print('Is map empty: ${ages.isEmpty}');
 }
+void greet(String name, [int? age]) {
+  print("Hello, $name! You are ${age ?? 'unknown'} years old.");
+}

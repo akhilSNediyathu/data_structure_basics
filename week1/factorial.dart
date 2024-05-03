@@ -4,8 +4,9 @@ int factorial(int n){
     return 1;
   }else{
     
-    int fact;
-    return fact = n* factorial(n-1);
+  
+    // int fact;
+    return n* factorial(n-1);
   }
 }
 
