@@ -77,6 +77,9 @@ temp?.next = newNode;
 
     }
     if(temp!=null){
+      // print(temp.data);
+      // print(prev?.data);
+
       prev?.next = temp.next;
     }
 
@@ -132,7 +135,9 @@ void main(List<String> args) {
   }
   // linkedList..displayNode()..reverseNode();
   // print('======================');
-  linkedList..displayNode()..replaceAt(2,9);
+  linkedList..displayNode()..delete(2);
   print('======================');
-   linkedList..displayNode()..sum();
+  linkedList.displayNode();
+
+  //  linkedList..displayNode()..sum();
 }
