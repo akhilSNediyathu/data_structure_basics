@@ -1,5 +1,5 @@
 void main(){
-  String a = 'my     name is Akhil';
+  String a = 'my     name is       Akhil';
   print(a);
  String b = '';
   for (var i = 0; i < a.length; i++) {
