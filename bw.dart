@@ -51,7 +51,12 @@ class LinkedList {
   }
 }
 
+test({required String name, String age = 'test'}) {
+  print(name + age);
+}
+
 main() {
+  test(name: 'akhil',age: '10');
 //   Test a = Test(10, 5);
 //   a
 //     ..add()
