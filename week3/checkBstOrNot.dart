@@ -8,6 +8,13 @@ class TreeNode {
 
 class BinaryTree {
   TreeNode? root;
+  showval(TreeNode? node) {
+    if (node != null) {
+      showval(node.left);
+      print(node.value);
+      showval(node.right);
+    }
+  }
 
   // Perform inorder traversal of the binary tree
   List<int> inorderTraversal(TreeNode? node) {
@@ -28,6 +35,7 @@ class BinaryTree {
         return false;
       }
     }
+    print(inorder);
     return true;
   }
 }
@@ -40,6 +48,7 @@ void main() {
   tree.root!.right = TreeNode(15);
   tree.root!.left!.left = TreeNode(2);
   tree.root!.left!.right = TreeNode(7);
+//   tree..showval(tree.root);
 
   // Validate whether the tree is a BST or not
   bool isBST = tree.isValidBST(tree.root);
