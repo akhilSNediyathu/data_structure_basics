@@ -41,7 +41,7 @@ class BinaryTree {
   void inOrderTraversal(TreeNode? node) {
     if (node != null) {
       inOrderTraversal(node.leftChild);
-      print(node.value);
+      print(node.value); 
       inOrderTraversal(node.rightChild);
     }
   }
