@@ -52,7 +52,7 @@ class singly {
     Node? prev = null;
     while (fast != null && fast.next != null) {
       prev = slow;
-      slow = slow!.next;
+      slow = slow!.next;  
       fast = fast.next!.next;
     }
     // return slow!.data;
