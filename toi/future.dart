@@ -1,6 +1,6 @@
 Future<int> fun() {
   return Future.delayed(
-      Duration(microseconds: 2), () =>2);
+      Duration(microseconds: 2), () =>throw Exception('unknown'));
 }
 
 void main() {

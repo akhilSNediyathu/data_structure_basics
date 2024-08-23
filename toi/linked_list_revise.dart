@@ -80,4 +80,9 @@ void main() {
   test.showData();
   print("==========");
   test.middle();
+  int c = 8;
+  do {
+    print(c);
+    c++;
+  } while (c < 5);
 }
